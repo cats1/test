@@ -1,0 +1,74 @@
+{
+  "index": {},
+  "mheader": [{
+  	"name": "首页",
+  	"dirName": "index",
+  	"children": []
+  },{
+  	"name": "人员",
+  	"dirName": "employee",
+  	"children": [{
+  	  "name": "公司员工",
+  	  "dirName": "employee"
+  	},{
+  	  "name": "常驻访客",
+  	  "dirName": "visit"
+  	},{
+  	  "name": "黑名单",
+  	  "dirName": "black"
+  	}]
+  },{
+  	"name": "通知",
+  	"dirName": "notice",
+  	"children": []
+  },{
+  	"name": "自定义设置",
+  	"dirName": "setting",
+  	"children": [{
+  	  "name": "前台设置",
+  	  "dirName": "pad"
+  	},{
+  	  "name": "预约邀请",
+  	  "dirName": "reserve"
+  	},{
+  	  "name": "手机门禁",
+  	  "dirName": "dock"
+  	},{
+  	  "name": "会议室门禁",
+  	  "dirName": "room"
+  	}]
+  },{
+  	"name": "会议",
+  	"dirName": "meet",
+  	"children": []
+  }],
+  "homepage": {
+  	"text": "官网首页",
+  	"dir": "#"
+  },
+  "userText": {
+  	"accountText": "账号管理",
+  	"signoutText": "退出账号"
+  },
+  "accountList": [{
+    "value": "0",
+    "label": "管理员"
+  },{
+    "value": "1",
+    "label": "总部管理员"
+  },{
+    "value": "2",
+    "label": "入驻企业"
+  },{
+    "value": "3",
+    "label": "员工"
+  },{
+    "value": "4",
+    "label": "前台"
+  }],
+  "signin": {
+  	"loginBtnText": "登录",
+  	"logintitleTip": "登录"
+  },
+  "result": []
+}
