@@ -1,0 +1,174 @@
+{
+  "index": {},
+  "mheader": [{
+  	"name": "首页",
+  	"dirName": "index",
+    "dirLink": "index.html",
+  	"children": []
+  },{
+  	"name": "人员",
+  	"dirName": "employee",
+    "dirLink": "employee.html",
+  	"children": [{
+  	  "name": "公司员工",
+  	  "dirName": "employee",
+      "dirLink": "employee.html"
+  	},{
+  	  "name": "常驻访客",
+  	  "dirName": "visit",
+      "dirLink": "visit.html"
+  	},{
+  	  "name": "黑名单",
+  	  "dirName": "black",
+      "dirLink": "black.html"
+  	}]
+  },{
+  	"name": "通知",
+  	"dirName": "notice",
+    "dirLink": "notice.html",
+  	"children": []
+  },{
+  	"name": "自定义设置",
+  	"dirName": "setting",
+    "dirLink": "setting.html",
+  	"children": [{
+  	  "name": "前台设置",
+  	  "dirName": "pad",
+      "dirLink": "pad.html"
+  	},{
+  	  "name": "预约邀请",
+  	  "dirName": "reserve",
+      "dirLink": "reserve.html"
+  	},{
+  	  "name": "手机门禁",
+  	  "dirName": "dock",
+      "dirLink": "dock.html"
+  	},{
+  	  "name": "会议室门禁",
+  	  "dirName": "room",
+      "dirLink": "room.html"
+  	}]
+  },{
+  	"name": "会议",
+  	"dirName": "meet",
+    "dirLink": "meet.html",
+  	"children": []
+  }],
+  "footer": {
+    "ftext1": "版权所有",
+    "ftext2": "南京访客乐网络科技有限公司. 保留一切权利.",
+    "flink": "苏ICP备15058768号"
+  },
+  "homepage": {
+  	"text": "官网首页",
+  	"dir": "#"
+  },
+  "userText": {
+  	"accountText": {
+      "name": "账号管理",
+      "dirName": "account",
+      "dirLink": "account.html"
+    },
+  	"signoutText": {
+      "name": "退出账号",
+      "dirName": null
+    }
+  },
+  "accountList": [{
+    "value": "0",
+    "label": "管理员",
+    "form": {
+      "placeholder1": "请输入您的邮箱",
+      "placeholder2": "请输入密码"
+    }
+  },{
+    "value": "1",
+    "label": "总部管理员",
+    "form": {
+      "placeholder1": "请输入超级账号",
+      "placeholder2": "请输入密码"
+    }
+  },{
+    "value": "2",
+    "label": "入驻企业",
+    "form": {
+      "placeholder1": "请输入邮箱",
+      "placeholder2": "请输入密码"
+    }
+  },{
+    "value": "3",
+    "label": "员工",
+    "form": {
+      "placeholder1": "请输入手机号",
+      "placeholder2": "请输入密码"
+    }
+  },{
+    "value": "4",
+    "label": "前台",
+    "form": {
+      "placeholder1": "请输入用户名",
+      "placeholder2": "请输入密码"
+    }
+  }],
+  "signin": {
+  	"loginBtnText": "登录",
+  	"logintitleTip": "登录",
+    "selectHolder": "请选择"
+  },
+  "formNullTip": {
+    "passName": {
+      "nullTip": "请输入密码"
+    },
+    "email": {
+      "nullTip": "请输入邮箱地址",
+      "errorTip": "邮箱格式不正确"
+    },
+    "phone": {
+      "nullTip": "请输入手机号",
+      "errorTip": "手机号格式不正确"
+    },
+    "superaccount": {
+      "nullTip": "请输入超级账号",
+      "errorTip": "超级账号格式不正确,,以LFT_开头"
+    },
+    "stageaccount": {
+      "nullTip": "请输入前台账号",
+      "errorTip": "前台账号格式不正确"
+    } 
+  },
+  "account": {
+    "leftMenuTitle": "账户信息",
+    "leftMenu": [{
+      "name": "基本资料",
+      "dirname": "",
+      "dirLink": "/"
+    },{
+      "name": "主题设置",
+      "dirname": "theme",
+      "dirLink": "/theme"
+    },{
+      "name": "账户安全",
+      "dirname": "safe",
+      "dirLink": "/safe"
+    },{
+      "name": "前台验证账号",
+      "dirname": "stage",
+      "dirLink": "/stage"
+    },{
+      "name": "充值管理",
+      "dirname": "charge",
+      "dirLink": "/charge"
+    },{
+      "name": "多企业服务模式",
+      "dirname": "coms",
+      "dirLink": "/coms"
+    }],
+    "language": [{
+      "name": "中文简称",
+      "dirName": "zh-Hans"
+    },{
+      "name": "英文",
+      "dirName": "en"
+    }]
+  }
+}

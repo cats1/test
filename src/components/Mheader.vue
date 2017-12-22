@@ -10,12 +10,12 @@
 		      	 	<el-submenu :index="item.dirName" >
 		      	      <template slot="title">{{item.name}}</template>
 		      	      <template v-for="(citem, cindex) in item.children" v-if="item.children.length>0" >
-		      	      	 <el-menu-item :index="citem.dirName">{{citem.name}}</el-menu-item>
+		      	      	 <el-menu-item :index="citem.dirName"><a :href="item.dirLink">{{citem.name}}</a></el-menu-item>
 		      	 	  </template>
 		      	 	</el-submenu>
 		      	 </template>
 		      	 <template v-else>
-		      	   <el-menu-item :index="item.dirName">{{item.name}}</el-menu-item>
+		      	   <el-menu-item :index="item.dirName"><a :href="item.dirLink">{{item.name}}</a></el-menu-item>
 		      	 </template>
 		      </template>
 		    </el-menu>
@@ -27,8 +27,8 @@
 			    <span class="useravater">p</span><span class="username">lana</span><i class="el-icon-arrow-down el-icon--right"></i>
 			  </span>
 			  <el-dropdown-menu slot="dropdown">
-			    <el-dropdown-item>{{userText.accountText}}</el-dropdown-item>
-			    <el-dropdown-item divided><a href="signin.html">{{userText.signoutText}}</a></el-dropdown-item>
+			    <el-dropdown-item><a :href="pageJson.userText.accountText.dirLink">{{pageJson.userText.accountText.name}}</a></el-dropdown-item>
+			    <el-dropdown-item divided><a href="signin.html">{{pageJson.userText.signoutText.name}}</a></el-dropdown-item>
 			  </el-dropdown-menu>
 			</el-dropdown>
   		</div>	    
@@ -37,23 +37,24 @@
 </template>
 
 <script>
-import pageJson from '../../static/zh-cn.json'
 export default {
   name: 'mheader',
+  props: ['activeIndex'],
   data () {
-    return {
-      activeIndex: 'index',
-      headList: [],
-      homeText: {},
-      userText: {}
+    return {}
+  },
+  computed: {
+    pageJson: function () {
+      return this.getPageJson()
+    },
+    headList: function () {
+      return this.getPageJson().mheader
+    },
+    homeText: function () {
+      return this.getPageJson().homepage
     }
   },
-  mounted () {
-    this.headList = pageJson.mheader
-    this.homeText = pageJson.homepage
-    this.userText = pageJson.userText
-    console.log(this.headList)
-  }
+  created () {}
 }
 </script>
 

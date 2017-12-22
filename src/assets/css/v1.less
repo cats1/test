@@ -1,63 +1,188 @@
-html,body{
-	margin:0;
-	padding:0;
+/* common */
+
+@baseBgColor: #545c64;
+@baseFontSize: 14px;
+@baseFontColor: #606266;
+@baseBorderColor:#e7e8e9;
+.color(@style){
+	color: @style
 }
-.mheader{
-	background:#545c64;
-	height:60px;
-	.headerwrap{
-	  width:90%;
-	  margin:0 auto;
-	  padding:0;
-	  .menuleft{
-	    float:left;
-	  }
-	  .menuright{
-	    float:right;
-	    color:#fff;
-	    .gohomepage{
-	      text-decoration:none;
-	      color:#fff;
-	      display:inline-block;
-	      height:60px;
-	      line-height:60px;
-	      padding:0 10px;
-	      border-left:1px solid #777;
-	      border-right:1px solid #777;
-	    }
-	    .el-dropdown{
-	      color:#fff;
-	      height:60px;
-	      line-height:60px;
-	      .useravater{
-	        border-radius:50%;
-	        width:40px;
-	        height:40px;
-	        line-height:40px;
-	        display:inline-block;
-	        background:#777;
-	      }
-	      .username{
-	        margin: 0 5px;
-	      }
-	    }
-	  }
-	}
+.padding(@pad){
+  padding:@pad
 }
-.loginwrap{
-	width:60%;
-	margin:0 auto;
-	position:relative;
-	.logintitle{
-	  text-align:center;	  
-	}
-	.loginselectwrap{
-	  position:absolute;
-	  top:0;
-	  right:0;
-	  .el-select{
-	    width:120px;
-	    float:right;
-	  }
-	}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: @baseFontSize;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: @baseFontColor;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,li, dt,dl,dd{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+/* clear */
+
+.clearboth {
+  clear: both;
+}
+.right{
+  float: right;
+}
+.padding10{
+  .padding(0 10px)
+}
+/* header */
+
+.mheader {
+  background: @baseBgColor;
+  height: 60px;
+  .headerwrap {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    .menuleft {
+      float: left;
+    }
+    .menuright {
+      float: right;
+      color: #fff;
+      .gohomepage {
+        color: #fff;
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 10px;
+        border-left: 1px solid #777;
+        border-right: 1px solid #777;
+      }
+      .el-dropdown {
+        color: #fff;
+        height: 60px;
+        line-height: 60px;
+        .useravater {
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          display: inline-block;
+          background: #777;
+        }
+        .username {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+
+/* footer */
+
+.footerwrap {
+  background: @baseBgColor;
+  padding: 16px 0;
+  p {
+    text-align: center;
+    line-height: 28px;
+    margin: 0;
+    color: rgba(255, 255, 255, .4);
+    color: #ccc\9;
+    a {
+      color: rgba(255, 255, 255, .4);
+      color: #ccc\9;
+    }
+  }
+}
+/* pagebodywrap */
+.pagebodywrap{
+  width:80%;
+  margin:0 auto;
+  padding:20px 0;
+}
+.loginwrap {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  .logintitle {
+    text-align: center;
+  }
+  .loginselectwrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    .el-select {
+      width: 120px;
+      float: right;
+    }
+  }
+}
+/* list */
+.left-menu-list{
+  dt {
+    height: 48px;
+    line-height: 48px;
+    font-size:1.2 * @baseFontSize;
+    padding:0 18px;
+    border-bottom: 1px solid @baseBorderColor;
+  }
+  dd,dl,dt {
+    height:36px;
+    line-height: 36px;
+    padding:0 18px;
+    text-align: left;  
+    a{
+      color: @baseFontColor;
+      display: block;
+    }
+  }
+  dd{
+    &.active{
+      border-left:2px solid #ffd04b;
+      background: #f2f3f4
+    }
+  }
+  li{
+    height:30px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+/* sectionwrap */
+.sectionwrap{
+  background-color: #fff;
+  float: left;
+  box-shadow: 0.5px 0.87px 3px 0 #b7bcc1;
+}
+/* form */
+.form-p{
+  margin:0;
+  text-align: left;
+}
+/* base */
+.base-wrap{
+  padding:0 20px 0 10px;
+  border-right:1px solid @baseBorderColor;
+}
+.base-v-wrap{
+  
+  h3{
+    font-size: 20px;
+    color: #2c7de5;
+    margin-top: 10px;
+  }
+  p{
+
+  }
 }
